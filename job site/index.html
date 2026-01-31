@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JobHuntPro</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+<div class="logo-wrap">
+  <h1 class="logo">JobHunt<span>Pro</span></h1>
+  <small class="logo-sub">Made by <span><b>Pritam</b></span></small>
+</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Jobs</a>
+    <a href="#">Companies</a>
+    <a href="#">Post Job</a>
+  </nav>
+  <a href="upload.btn.html">
+  <button class="Upload-btn">Upload</button>
+</a>
+
+</header>
+
+<!--HERO -->
+<section class="hero">
+  <h2>Find Your <span>Dream Job</span> Today</h2>
+  <p>OPEN IT ON DESKTOP FOR BETTER EXPERIENCE STILL WOTKING ON MOBILE OPTIMISATION </p>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search job title...">
+    <select id="filterSelect">
+      <option value="all">All</option>
+      <option value="developer">Developer</option>
+      <option value="designer">Designer</option>
+      <option value="marketing">Marketing</option>
+    </select>
+    <button onclick="filterJobs()">Search</button>
+  </div>
+</section>
+
+<!-- JOB LIST -->
+<section class="jobs" id="jobList">
+
+  <!-- Card -->
+  <div class="job-card" data-category="developer">
+    <h3>Frontend Developer</h3>
+    <p>Google Inc.</p>
+    <span>Remote</span>
+    <button>Apply Now</button>
+  </div>
+  <div class="job-card" data-category="designer">
+    <h3>UI/UX Designer</h3>
+    <p>Adobe</p>
+    <span>Hybrid</span>
+    <button>Apply Now</button>
+  </div>
+
+  <div class="job-card" data-category="marketing">
+    <h3>Digital Marketer</h3>
+    <p>Amazon</p>
+    <span>Onsite</span>
+    <button>Apply Now</button>
+  </div>
+
+  <div class="job-card" data-category="developer">
+    <h3>Backend Developer</h3>
+    <p>Microsoft</p>
+    <span>Remote</span>
+    <button>Apply Now</button>
+  </div>
+  <div class="job-card" data-category="developer">
+  <h3>Full Stack Developer</h3>
+  <p>Meta</p>
+  <span>Remote</span>
+  <button>Apply Now</button>
+</div>
+
+<div class="job-card" data-category="designer">
+  <h3>Product Designer</h3>
+  <p>Figma</p>
+  <span>Hybrid</span>
+  <button>Apply Now</button>
+</div>
+
+<div class="job-card" data-category="marketing">
+  <h3>SEO Specialist</h3>
+  <p>HubSpot</p>
+  <span>Onsite</span>
+  <button>Apply Now</button>
+</div>
+
+<div class="job-card" data-category="developer">
+  <h3>DevOps Engineer</h3>
+  <p>IBM</p>
+  <span>Remote</span>
+  <button>Apply Now</button>
+</div>
+
+<div class="job-card" data-category="developer">
+  <h3>Android Developer</h3>
+  <p>Samsung</p>
+  <span>Hybrid</span>
+  <button>Apply Now</button>
+</div>
+
+<div class="job-card" data-category="designer">
+  <h3>Graphic Designer</h3>
+  <p>Canva</p>
+  <span>Remote</span>
+  <button>Apply Now</button>
+</div>
+
+<div class="job-card" data-category="marketing">
+  <h3>Social Manager</h3>
+  <p>Spotify</p>
+  <span>Remote</span>
+  <button>Apply Now</button>
+</div>
+
+<div class="job-card" data-category="developer">
+  <h3>Data Scientist</h3>
+  <p>OpenAI</p>
+  <span>Hybrid</span>
+  <button>Apply Now</button>
+</div>
+
+</section>
+<!-- ================= POPULAR CATEGORIES ================= -->
+<section class="long-section">
+  <h2>Popular <span>Categories</span> </h2>
+  <div class="long-grid">
+
+    <div class="long-card">Web Development</div>
+    <div class="long-card">UI / UX Design</div>
+    <div class="long-card">Mobile App</div>
+    <div class="long-card">AI / Machine Learning</div>
+    <div class="long-card">Cloud Computing</div>
+    <div class="long-card">Cyber Security</div>
+
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="long-section">
+  <h2><span> How </span>  It  Works</h2>
+
+  <div class="long-grid">
+
+    <div class="long-card">
+      <h3>Create Account</h3>
+      <p>Register and build your professional profile.</p>
+    </div>
+
+    <div class="long-card">
+      <h3>Upload Resume</h3>
+      <p>Add resume and portfolio.</p>
+    </div>
+
+    <div class="long-card">
+      <h3>Apply Job</h3>
+      <p>Send application with one click.</p>
+    </div>
+
+  </div>
+</section>
+
+<!--  FEATURED COMPANIES -->
+<section class="long-section">
+  <h2>Featured <span>Companies</span></h2>
+<div class="logo-slider">
+  <div class="logo-track">
+
+    <!-- ORIGINAL LOGOS -->
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg">
+
+<!-- DUPLICATE FOR LOOP -->
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg">
+
+</div>
+</div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="long-section">
+  <h2>Use<span>R Rev</span>iews</h2>
+
+  <div class="long-grid">
+
+    <div class="long-card">
+      "I got hired within 10 days!"
+      <br><br>- Rahul
+    </div>
+
+    <div class="long-card">
+      "Best job searching platform."
+      <br><br>- Ayesha
+    </div>
+
+    <div class="long-card">
+      "Amazing UI and fast results."
+      <br><br>- Karan
+    </div>
+  </div>
+</section>
+
+<!-- Pritam Social -->
+<section class="long-section">
+  <h2>Subscribe <span>For Job</span> Alerts</h2>
+
+  <div class="newsletter-box">
+    <input type="email" placeholder="Enter your email">
+    <a href="subscribe.html">
+  <button>Subscribe</button>
+</a>
+
+  </div>
+</section>
+
+<footer class="neo-footer">
+  <div class="neo-container">
+
+    <!-- Left -->
+    <div class="neo-left">
+      <h2><b>Pritam</b></h2>
+      <p>
+        Artificial Intelligence student focused on building
+        intelligent, visually engaging, and performance-driven
+        digital experiences.
+      </p>
+    </div>
+
+    <!-- Right -->
+    <div class="neo-right">
+      <h3>Connect with <span>Me</span> on</h3>
+
+<div class="neo-socials">
+
+<a href="https://www.facebook.com/share/1aHRacYiqe/" target="_blank">
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/pritams_zone" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/pritam-world" target="_blank">
+  <i class="fab fa-linkedin-in"></i>
+</a>
+
+<a href="https://github.com/pritam306" target="_blank">
+  <i class="fab fa-github"></i>
+</a>
+
+</div>
+</div>
+</div>
+<div class="neo-bottom">
+
+<p>© 2026 JobHuntPro. All copyrights reserved</p>
+
+<p>
+Made by 
+<a href="https://pritambuilds..netlify.app" 
+target="_blank" 
+class="pritam-link">Pritam</a>
+with <span>❤</span>
+</p>
+</div>
+
+</footer>
+<script src="script.js"></script>
+</script>
+</body>
+</html>

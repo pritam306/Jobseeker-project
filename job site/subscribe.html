@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Subscription Plans</title>
+
+<style>
+body{
+margin:0;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#000;
+font-family:Arial, sans-serif;
+color:white;
+}
+
+.container{
+width:90%;
+max-width:1000px;
+text-align:center;
+}
+
+.container h1{
+font-size:42px;
+margin-bottom:40px;
+}
+
+.container span{
+color:#00f2fe;
+}
+
+.plans{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.plan{
+background:#111;
+padding:35px 25px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(0,242,254,0.3);
+transition:0.4s;
+position:relative;
+overflow:hidden;
+}
+
+.plan:hover{
+transform:translateY(-10px);
+box-shadow:0 0 40px #00f2fe;
+}
+
+.plan h2{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.price{
+font-size:40px;
+color:#00f2fe;
+margin:20px 0;
+}
+
+.plan ul{
+list-style:none;
+padding:0;
+margin:0 0 25px;
+}
+
+.plan ul li{
+margin:10px 0;
+color:#ccc;
+}
+
+.plan button{
+padding:12px 28px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#00f2fe,#4facfe);
+color:black;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.plan button:hover{
+box-shadow:0 0 15px #00f1feb6,0 0 30px #4facfee1;
+transform:scale(1.05);
+}
+
+/* Highlight plan */
+.popular{
+border:2px solid #00f2fe;
+box-shadow:0 0 40px #00f1fe85;
+}
+
+.badge{
+position:absolute;
+top:15px;
+right:-35px;
+background:#00f2fe;
+color:rgba(7, 3, 3, 0.952);
+padding:6px 40px;
+transform:rotate(45deg);
+font-size:12px;
+font-weight:bold;
+}
+/* BOTTOM */
+
+.neo-bottom{
+margin-top:70px;
+border-top:1px solid rgba(255, 255, 255, 0.589);
+padding-top:22px;
+text-align:center;
+opacity:1.7;
+}
+
+.neo-bottom span{
+color:#ff3c90;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Choose Your <span>Plan</span></h1>
+
+<div class="plans">
+
+<div class="plan">
+<h2>Free</h2>
+<p class="price">$0</p>
+<ul>
+<li>Job Alerts</li>
+<li>Basic Search</li>
+<li>Limited Applications</li>
+</ul>
+<button>Select</button>
+</div>
+
+<div class="plan popular">
+<div class="badge">POPULAR</div>
+<h2>Pro</h2>
+<p class="price">$9/mo</p>
+<ul>
+<li>Unlimited Job Alerts</li>
+<li>Premium Jobs</li>
+<li>Resume Highlight</li>
+<li>Priority Support</li>
+</ul>
+<button>Get Pro</button>
+</div>
+
+<div class="plan">
+<h2>Enterprise</h2>
+<p class="price">$19/mo</p>
+<ul>
+<li>All Pro Features</li>
+<li>Dedicated Manager</li>
+<li>Company Insights</li>
+</ul>
+<button>Choose</button>
+</div>
+</div>
+<footer>
+  <div class="neo-bottom">
+    <p>© 2026 JobHuntPro. All copyrights reserved.</p>
+    <p>Made by Pritam with <span>❤</span></p>
+  </div>
+</footer>
+</body>
+</html>

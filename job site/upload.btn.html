@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Upload File</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#000;
+font-family:Arial, sans-serif;
+color:white;
+}
+
+.upload-box{
+background:#111;
+padding:40px;
+border-radius:20px;
+width:350px;
+text-align:center;
+box-shadow:0 0 40px #00f2fe;
+}
+
+.upload-box h2{
+margin-bottom:20px;
+}
+
+input[type="file"]{
+display:block;
+width:100%;
+padding:12px;
+margin-bottom:20px;
+background:#1a1a1a;
+color:white;
+border-radius:10px;
+border:none;
+}
+
+.upload-btn{
+width:100%;
+padding:12px;
+border:none;
+border-radius:20px;
+background:linear-gradient(45deg,#00f2fe,#4facfe);
+color:black;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.upload-btn:hover{
+box-shadow:0 0 15px #00f2fe,0 0 30px #4facfe;
+transform:translateY(-2px);
+}
+#successMsg{
+margin-top:15px;
+color:#00ffcc;
+font-size:15px;
+opacity:0;
+transform:translateY(10px);
+transition:0.4s ease;
+text-shadow:0 0 10px #00ffcc;
+}
+
+#successMsg.show{
+opacity:1;
+transform:translateY(0);
+}
+.error{
+color:#ff4d4d;
+text-shadow:0 0 10px red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="upload-box">
+  <h2>Upload Your Resume</h2>
+
+  <input type="file" id="fileInput" accept=".jpg,.jpeg,.pdf">
+
+  <button class="upload-btn" onclick="uploadFile()">Upload</button>
+
+  <p id="successMsg">✔ File uploaded successfully!</p>
+</div>
+<script>
+function uploadFile(){
+  const file = document.getElementById("fileInput").value;
+    if(file === ""){
+    successMsg.textContent="Please select a file first!";
+    successMsg.classList.add("show","error");
+
+  }else{
+    document.getElementById("successMsg").classList.add("show");
+  }
+}
+</script>
+</body>
+</html>
